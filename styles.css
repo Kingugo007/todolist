@@ -1,0 +1,106 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    
+}
+
+body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+.container {
+    height: 100vh;
+}
+
+.todo-container {
+    display: flex;
+   flex-direction: row;
+                  
+}
+
+.todoList{
+   background-color: rgb(51, 49, 49);
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center;
+   flex: 50%; 
+}
+
+.createTodo {
+    background-color: rgb(17, 17, 17);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    flex: 50%; 
+    
+}
+
+.todoItems{
+    width: 80%;
+}
+.todoItems h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 0px;
+    background-color: gray;
+}
+
+.todoItems ul{
+    margin-top: 40px;
+    text-align: center;
+}
+
+.todoItems ul li{
+   text-decoration: none;
+   color: white;
+   font-size: 20px;
+   text-transform: capitalize;
+   list-style: none;
+}
+
+.todoForm{
+    width: 70%;
+}
+
+.todoInput {
+    width: 100%;
+    height: 50px;
+    padding: 2px;
+}
+
+.todoInput:focus {
+  outline: none;
+}
+
+.error {
+    color: red;
+    padding: 10px 0px;
+}
+
+.btn{
+    margin-top: 8px;
+    padding: 5px 15px;
+    font-size: 20px;
+    background-color: aqua;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border: none;
+    text-transform: uppercase;
+}
+
+
+@media (max-width: 800px) {
+    .todo-container {
+      flex-direction: column;
+    }
+  }
